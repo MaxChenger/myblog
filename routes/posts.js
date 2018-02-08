@@ -1,5 +1,5 @@
 const express = require('express');
-const router = express.Router()
+const router = express.Router();
 
 const checkLogin = require('../middlewares/check').checkLogin;
 
@@ -34,4 +34,4 @@ router.get('/:postId/remove', checkLogin, function (req, res, next) {
     res.send('删除文章')
 });
 
-module.export = router;
+module.exports = router;
